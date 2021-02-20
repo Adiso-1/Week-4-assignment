@@ -27,3 +27,15 @@ forEachLoop(myArray);
 myArray.forEach((el) => console.log(el));
 
 // ! Map loop
+const mapLoop = array => {
+    let mapArray = [];
+    for (let i = 0; i < array.length; i++) {
+        mapArray.push(array[i].toUpperCase())       
+    }
+    return mapArray;
+}
+const mapArg = ["hello", "my", "name", "is", "Adi"];
+console.log('--map with for loop');
+console.log(mapLoop(mapArg));
+console.log('--map with map loop');
+console.log(mapArg.map(el => el.toUpperCase()));
