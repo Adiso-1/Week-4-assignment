@@ -7,13 +7,13 @@ const getLength = (string) => {
           shortest = wordLength;
         }
     }
-    return shortest;
+    return shortest; // 2
 } 
 console.log(getLength('Hello my name is adi'));
 
 // get an array of the shortest words
 const getShortestWords = (string) => {
     let array = string.split(' ').sort((a,b) => a.length - b.length);
-    return filteredArray = array.filter(word => word.length <= array[0].length)
+    return filteredArray = array.filter(word => word.length <= array[0].length) // ['my' , 'is']
 }
 console.log(getShortestWords('Hello my name is adi'));
